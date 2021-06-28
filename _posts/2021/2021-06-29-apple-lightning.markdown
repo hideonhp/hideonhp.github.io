@@ -87,4 +87,9 @@ Với cáp thật thì chúng ta lại có 4 loại chính:
 
 ## Cách nhận biết loại cáp bằng phần mềm 3utools
 
-Đầu tiên là phải tải phần mềm từ trang chủ của [3utools](#)
+Đầu tiên là phải tải phần mềm từ trang chủ của [3utools](http://www.3u.com/).
+<div class="fig figcenter fighighlight">
+  <img src="/images/apple_lightning/3u.jpg">
+  <div class="figcaption"><br>Phần mềm siêu hoàn hảo dành cho dòng sản phẩm của Apple.
+  </div>
+</div>
