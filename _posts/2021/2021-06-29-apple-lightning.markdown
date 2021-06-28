@@ -138,7 +138,7 @@ Bây giờ các bạn chỉ cần cắm cáp vào điện thoại (không cần 
   <div class="figcaption"><br>Các bạn chỉ cần để ý dòng Manufacturer là Apple, cáp hacked và phake không hiện dòng này.
   </div>
 </div>
-Bởi vì đối với hệ điều hành [Ios](#) trên Iphone chỉ quan tâm là cáp xịn hay không, nên bạn chỉ có thể biết được đây là loại cáp xịn (có thể là loại MFI hoặc chính hãng) hoặc cáp không chính thống (có thể là loại hacked hoặc phake).
+Bởi vì đối với hệ điều hành [Ios](#) trên Iphone chỉ quan tâm là cáp xịn hay không, nên bạn chỉ có thể biết được đây là loại `cáp xịn` (có thể là loại MFI hoặc chính hãng) hoặc cáp `không chính thống` (có thể là loại hacked hoặc phake).
 ## Cách nhận biết loại cáp bằng thiết bị chuyên dụng
 Thiết bị này khá đắt, nên không có hướng dẫn nha :v
 <div class="fig figcenter fighighlight">
@@ -146,4 +146,7 @@ Thiết bị này khá đắt, nên không có hướng dẫn nha :v
   <div class="figcaption"><br>Giá của thiết bị này không dưới vài triệu đâu.
   </div>
 </div>
-Mình mong rằng bài viết này sẽ giúp ích cho bạn và gia tăng trải nghiệm sử dụng thiết bị Apple của bạn.
+## Cảnh báo
+Các bạn không nên tham rẻ mà mua những phụ kiện `Zin bóc máy, Zin công ty, Zin Foxconn,...` được bày bán tràn lan trên các trang thương mại điện tử. `Thằng bạn tôi` đã từng được tôi `cảnh báo` nhưng nó vẫn tham, và cái kết là hỏng luôn chiếc điện thoại. Cáp nó từng mua có giá trị rất lớn, 150 nghìn cho 1 chiếc cáp loại `hacked`. Trong khi cáp chính hãng tầm 590 nghìn và cáp MFI tầm 100 nghìn đến 400 nghìn tùy hãng thứ 3.
+## Vài lời kết bài
+Mình mong rằng bài viết này sẽ giúp ích cho bạn và gia tăng trải nghiệm sử dụng thiết bị Apple của bạn. Đừng đi theo vết xe đổ của thằng bạn mình, nếu đã lỡ bước thì hãy `quay xe` ngay và luôn sau khi đọc bài viết này.
