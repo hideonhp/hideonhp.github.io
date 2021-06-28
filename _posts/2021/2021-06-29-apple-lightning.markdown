@@ -84,3 +84,7 @@ Với cáp thật thì chúng ta lại có 4 loại chính:
 - Original: Gồm những phụ kiện được Apple chính thức `ủy quyền` cho các nhà máy [OEM](#) như Foxconn để sản xuất các phụ kiện chất lượng cao.
 - Hacked: Gồm những phụ kiện không được sự cho phép lẫn công nhận của Apple, nhưng vẫn có vi xử lý giả để có thể sử dụng cho việc sạc hoặc truyền dữ liệu. Loại này hay còn được gọi là `Fake loại 1`.
 - Pha-Ke (fake): Bao gồm các loại cáp kém chất lượng, có thể sạc và truyền dữ liệu nhưng `hoàn toàn` có thể gây ra sự `mất mát dữ liệu` hoặc `cháy nổ` do thiếu mất sự có mặt của những `bộ vi xử lý quan trọng`. Loại này nên tránh xa trước khi màn hình của bạn bị [liệt cảm ứng](#) hoặc [gây ra các vấn đề về pin](#). Tệ nhất là hỏng luôn cả điện thoại như anh bạn `Hiếu` mà tôi quen.
+
+## Cách nhận biết loại cáp bằng phần mềm 3utools
+
+Đầu tiên là phải tải phần mềm từ trang chủ của [3utools](#)
