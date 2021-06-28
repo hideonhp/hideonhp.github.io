@@ -63,40 +63,28 @@ và một số thiết bị sạc dự phòng của hãng thứ 3 đạt tiêu c
 
 ## Tại sao không nên dùng cáp Lightning giả?
 
-It doesn't require much. Basically you write your "normal" Python function, and then add a decorator to the function definition (If you aren't so familiar with decorators read [this](https://www.thecodeship.com/patterns/guide-to-python-function-decorators/) or [that](https://realpython.com/blog/python/primer-on-python-decorators/) for an introduction). There exist different kind of decorators you can use, but the `@jit` might be the one of choice for the beginning. The other decorators can be used to e.g. create numpy universal functions `@vectorize` or write code that will be executed on a CUDA GPU `@cuda`. I won't cover these decorators in this article, but maybe in another. For now, let's just have a look on the basic steps.
-The code example they provide is a summation function of a 2d-array (you probably would never calculate this way) but here is the code:
+Đã có rất nhiều bài báo nói về vấn đề này. Bạn đọc có thể tìm hiểu thêm tại. [Với cáp Lightning giả này, hacker có thể chiếm quyền máy tính của bạn chỉ trong vài phút ](https://genk.vn/voi-cap-lightning-gia-nay-hacker-co-the-chiem-quyen-may-tinh-cua-ban-chi-trong-vai-phut-20190811164900984.chn) hoặc là [Tại sao cáp Lightning dỏm có thể hủy hoại iPhone?](https://vnreview.vn/tin-tuc-xa-hoi-so/-/view_content/content/2752378/tai-sao-cap-lightning-dom-co-the-huy-hoai-iphone).
 
-```python
-from numba import jit
-from numpy import arange
+## Có những  loại cáp hiện có ở trên thị trường?
 
-# jit decorator tells Numba to compile this function.
-# The argument types will be inferred by Numba when function is called.
-@jit
-def sum2d(arr):
-    M, N = arr.shape
-    result = 0.0
-    for i in range(M):
-        for j in range(N):
-            result += arr[i,j]
-    return result
+Trên thị trường có rất nhiều loại cáp lightning khác nhau, mặc dù nhìn vẻ bề ngoài thì không thể nhận thấy sự khác biệt, nhưng ở bên trong lại sử dụng những loại chip khác nhau.
 
-a = arange(9).reshape(3,3)
-print(sum2d(a))
+``` bash
+Có 2 loại cáp `chính` là “sạc nhanh” và “sạc thường”, và 1 loại `phụ` là “phụ kiện”:
+- Sạc nhanh: C52, C91, C94.
+- Sạc thường: C48, E75.
+- Phụ kiện: C100.
 ```
-As you can see, all that is done is, that a Numba decorator was added to the function definition, and voilá this function will run pretty fast.
-But here comes the caveat of the whole joy: You can only use Numpy and standard libraries inside the functions you want to speed up with Numba and not even all of their functionality. The good point: They have a pretty decent [documentation](http://numba.pydata.org/numba-doc/0.35.0/index.html), where everything that is supported is listed. See [here](http://numba.pydata.org/numba-doc/0.35.0/reference/pysupported.html) for the supported Python features and [here](http://numba.pydata.org/numba-doc/0.35.0/reference/numpysupported.html) for the supported Numpy features (for the current version 0.35). But let me tell you, that's enough! Remember, Numba isn't meant to speed up your database queries or any image processing functionality of a third party library. Their aim is to speed up array-oriented computations and this can be perfectly done using their supported functions.
 
-## Example and Speed comparison
+Tính đến thời điểm hiện tại, cáp sạc thường gần không thể nhận biết được thật hay giả bằng mắt và cả bằng phần mềm, do cơ chế bảo mật của cáp sạc thường đã bị bẻ khóa bởi “pháp sư trung hoa” từ tận… 2012, thời điểm ra mắt của cáp lightning.
+Chính vì sự dể bẻ khóa của cáp thường, khi ra mắt thế hệ lightning sạc nhanh (2017), Apple đã cung cáp cơ chế mã hóa với thuật toán SHA265, điều này khiến cho việc bẻ khóa cáp sạc nhanh khó như bẻ khóa tiền mã hóa Bitcoin.
+Cho nên, trong bài viết này, tôi chỉ tập trung vào mục “kiểm tra cáp sạc nhanh lightning là thật hay giả” thay vì cáp sạc thường.
+-
+Với cáp thật thì chúng ta lại có 3 loại chính:
+- Mfi: MFi là viết tắt của cụm từ “Made for iPhone/iPad/iPod”, đây là chứng chỉ được Apple đưa ra nhằm siết chặt việc quản lý phụ kiện dành cho iPhone/iPad/iPod được sản xuất bởi các hãng thứ 3. Chứng chỉ MFi là một trong những đảm bảo giúp người dùng tránh những rủi ro khi mua những phụ kiện có sử dụng điện cho thiết bị của Apple.
+- Original: Là những phụ kiện được Apple ủy quyền cho các nhà máy [OEM](#) như Foxconn để sản xuất các phụ kiện chất lượng cao.
+- Hacked:  
 
-I'm not the biggest fan of this kind of examples like above, the typical Python user would never implement like this, but instead call `numpy.sum`. Instead I'll give you another example, where you can't simply fall back to a highly optimized library like Numpy. To better understand this example, maybe first a little background story (If you aren't interested in the context of the code you'll see in the example, you can directly [skip](#code) this and go directly to the code).
-
-From what I've studied, I would consider myself a Hydrologist and one thing we do a lot is to simulate rainfall-runoff processes. Simpler said: We have time series of e.g. rain and air temperature and try to model the how much discharge you can expect in a river to any given time step of that series. It might be a bit more complicated like this, but let me tell you: not much! So the models we typically use iterate over the input arrays and for each time step, we update some model internal states (e.g. storages that simulate the soil moisture, snow pack or the interception of water in e.g. the trees). At the end of each time step, the discharge is calculated, which is not only depended on the rain, that has fallen at the same time step, but also at the internal model states (or storages), which in their case are depended on the state and input of previous time steps.
-Well you maybe see the problem: We have to calculate the whole process time step by time step and Python is natively really slow for this!
-This is why most of the models are implemented in Fortran or C/C++, which only a few of us understand and the most just apply them. Python at the same time is used by more people, is far more understandable and easier to start with, but as said before: slow for this kind of array-oriented calculations.
-But what if Numba allows us to do the same thing in Python, without much of a performance loss? I think at least for model understanding and development, this might come handy (Therefore I created recently a project called [RRMPG - Rainfall-Runoff-Modelling-Playground](http://rrmpg.readthedocs.io/en/latest/index.html)).
-
-Okay now let's check what we got. We'll use one of the simplest models, the ABC-Model which was developed by M. B. Fiering in 1967 for educational purpose, and compare the speed of the of native Python code against Numba optimized code and a Fortran implementation. Please not that this model is not what we use in reality (as the name suggests) but I thought it might be a better Idea to give an example, which you have to implement from scratch and can't fall back to e.g. Numpy.
 
 The ABC-Models is a three parameter model (a, b, c, hence the name), that only receives rain as input and only has one storage. A fraction of the rain is immediately lost, due to evapotranspiration (parameter b), another fraction percolates through the soil to the groundwater storage (parameter a), and the last parameter c stands for the amount of groundwater, that leaves the storage into the stream. The code in Python, with the use of Numpy arrays might look like this:
 
