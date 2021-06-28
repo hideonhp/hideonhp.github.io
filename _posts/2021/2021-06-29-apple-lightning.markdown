@@ -96,19 +96,19 @@ Với cáp thật thì chúng ta lại có 4 loại chính:
 Sau khi đã kết nối thành công bằng sợi cáp mà bạn định `kiểm tra`. Hãy vào phần Toolbox.
 <div class="fig figcenter fighighlight">
   <img src="/images/apple_lightning/3u2.PNG">
-  <div class="figcaption"><br>Sau đó mở mục Genuine.
+  <div class="figcaption"><br>
   </div>
 </div>
 Sau khi đã mở thành công `Genuine Part`, ở đây chúng ta sẽ chọn `Test Accessories` để kiểm tra cáp.
 <div class="fig figcenter fighighlight">
   <img src="/images/apple_lightning/3u3.PNG">
-  <div class="figcaption"><br>Sau đó chọn Test Accessories.
+  <div class="figcaption"><br>
   </div>
 </div>
 Ở đây, 3u cho kết quả là phụ kiện được `sản xuất bởi hãng thứ 3`, tức là loại cáp `MFI`.
 <div class="fig figcenter fighighlight">
   <img src="/images/apple_lightning/3u4.PNG">
-  <div class="figcaption"><br>Kết quả của cáp này là MFI.
+  <div class="figcaption"><br>
   </div>
 </div>
 Bởi vì không có tiền để mua cáp xịn về thử và cũng không có ngu mà mua cáp kém chất lượng về, nên mình sẽ lấy hình ảnh bên 3u cung cấp để cho các bạn có cái nhìn rõ hơn.
