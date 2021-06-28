@@ -1,8 +1,15 @@
 ---
 layout: page
-title: About me
+title: Kiến Thức là Vũ Khí
 subtitle:
 ---
 
-I recently started a PhD in machine/deep learning at the [Institut of Bioinformatics](http://www.bioinf.jku.at/) of the Johannes Kepler University in Linz, Austria in the team of Sepp Hochreiter.
-Previously I worked at the Institute of Water Management, Hydrology and Hydraulic Engineering at the BOKU University in Vienna, as a research assistant. I did my Master in environmental engineering ant the topic of my Master thesis was the development of a software as part of a semi-automatic monitoring system for fish migration in fish passes. The thesis can be found [here](http://permalink.obvsg.at/bok/AC13359496) (in German only). In my time as research assistant at the BOKU university I mostly worked on machine learning applications in the field of hydrology and environmental sciences.
+- `Kiến thức` chính là một thứ `vũ khí` giúp cho cuộc sống của bạn tốt hơn, việc thiếu kiến thức không hề dẫn đến cuộc sống của bạn tệ hơn, nhưng có thể khiến cuộc sống của bạn không được trọn vẹn và sẽ có rất nhiều điều `hối hận` có thể xảy ra.
+- Nhưng thời nay, chúng ra rất khó để có thể kiếm 'kiến thức' thật sự giữa những thông tin `giả`, `sai sự thật` đến từ vị trí của các báo lá cải.
+- `Blog` này được tạo ra với mục đích cung cấp các thông tin, kiến thức bổ ích đến người đọc.
+- Trên thế giới này không tồn tại kẻ ngu hay giỏi. Mà chỉ tồn tại 2 loại người chính, `chăm chỉ` và `lười biếng`. Kẻ lười biếng thì không bao giờ thành công được, nhưng điều đó không có nghĩa kẻ chăm chỉ chắc chắn thành công.
+<div class="fig figcenter fighighlight">
+  <img src="/images/about.jpg">
+  <div class="figcaption"><br>Bên trái là cổng 30-pin cũ, còn bên phải là cổng lightning mới.
+  </div>
+</div>
