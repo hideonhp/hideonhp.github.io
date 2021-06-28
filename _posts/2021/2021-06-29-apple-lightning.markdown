@@ -142,7 +142,7 @@ Bởi vì đối với hệ điều hành [Ios](#) trên Iphone chỉ quan tâm 
 ## Cách nhận biết loại cáp bằng thiết bị chuyên dụng
 Thiết bị này khá đắt, nên không có hướng dẫn nha :v
 <div class="fig figcenter fighighlight">
-  <img src="/images/apple_lightning/othe.PNG">
+  <img src="/images/apple_lightning/othe.jpg">
   <div class="figcaption"><br>Giá của thiết bị này không dưới vài triệu đâu.
   </div>
 </div>
