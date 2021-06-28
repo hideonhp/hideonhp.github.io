@@ -65,12 +65,12 @@ và một số thiết bị sạc dự phòng của hãng thứ 3 đạt tiêu c
 
 Đã có rất nhiều bài báo nói về vấn đề này. Bạn đọc có thể tìm hiểu thêm tại. [Với cáp Lightning giả này, hacker có thể chiếm quyền máy tính của bạn chỉ trong vài phút ](https://genk.vn/voi-cap-lightning-gia-nay-hacker-co-the-chiem-quyen-may-tinh-cua-ban-chi-trong-vai-phut-20190811164900984.chn) hoặc là [Tại sao cáp Lightning dỏm có thể hủy hoại iPhone?](https://vnreview.vn/tin-tuc-xa-hoi-so/-/view_content/content/2752378/tai-sao-cap-lightning-dom-co-the-huy-hoai-iphone).
 
-## Có những  loại cáp hiện có ở trên thị trường?
+## Có những  loại cáp nào hiện có ở trên thị trường?
 
 Trên thị trường có rất nhiều loại cáp lightning khác nhau, mặc dù nhìn vẻ bề ngoài thì không thể nhận thấy sự khác biệt, nhưng ở bên trong lại sử dụng những loại chip khác nhau.
 
 ``` bash
-Có 2 loại cáp `chính` là “sạc nhanh” và “sạc thường”, và 1 loại `phụ` là “phụ kiện”:
+Có 2 loại cáp sạc là “sạc nhanh” và “sạc thường”, và loại thiết bị “phụ kiện”:
 - Sạc nhanh: C52, C91, C94.
 - Sạc thường: C48, E75.
 - Phụ kiện: C100.
@@ -123,3 +123,27 @@ Bởi vì không có tiền để mua cáp xịn về thử và cũng không có
   </div>
 </div>
 Bên trên là cách kiểm tra cáp sạc lightning, nếu bạn muốn kiểm tra các phụ kiện như cổng chuyển hoặc tai nghe, các bạn có thể xem hướng dẫn tiếng anh [tại đây](https://www.3u.com/tutorial/articles/10368/how-to-use-genuine-accessories-detection).Hoặc là đợi mình làm bài hướng dẫn (nếu có điều kiện).
+
+## Cách nhận biết loại cáp Mfi và chính hãng bằng điện thoại Iphone (jailbreak)
+Các bạn có thể tìm hiểu vè jailbreak và cách jailbreak ở [đây](#).
+Sau khi điện thoại đang ở trạng thái jailbreak, các bạn hãy thêm nguồn [Kênh Táo](https://repo.kenhtao.net/). Rồi sau đó tìm kiếm `System Info` ở trong nguồn này và cài đặt nó.
+<div class="fig figcenter fighighlight">
+  <img src="/images/apple_lightning/jb1.PNG">
+  <div class="figcaption"><br>Nhớ cài đúng loại của kenhtao nha, cài sai có gì xảy ra ráng chịu.
+  </div>
+</div>
+Bây giờ các bạn chỉ cần cắm cáp vào điện thoại (không cần cắm vào củ sạc), rồi sau đó vào mục `cài đặt -> pin` kéo xuống dưới cùng để xem thông tin cáp.
+<div class="fig figcenter fighighlight">
+  <img src="/images/apple_lightning/jb2.PNG">
+  <div class="figcaption"><br>Các bạn chỉ cần để ý dòng Manufacturer là Apple, cáp hacked và phake không hiện dòng này.
+  </div>
+</div>
+Bởi vì đối với hệ điều hành [Ios](#) trên Iphone chỉ quan tâm là cáp xịn hay không, nên bạn chỉ có thể biết được đây là loại cáp xịn (có thể là loại MFI hoặc chính hãng) hoặc cáp không chính thống (có thể là loại hacked hoặc phake).
+## Cách nhận biết loại cáp bằng thiết bị chuyên dụng
+Thiết bị này khá đắt, nên không có hướng dẫn nha :v
+<div class="fig figcenter fighighlight">
+  <img src="/images/apple_lightning/othe.PNG">
+  <div class="figcaption"><br>Giá của thiết bị này không dưới vài triệu đâu.
+  </div>
+</div>
+Mình mong rằng bài viết này sẽ giúp ích cho bạn và gia tăng trải nghiệm sử dụng thiết bị Apple của bạn.
