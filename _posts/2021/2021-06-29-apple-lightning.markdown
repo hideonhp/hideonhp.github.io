@@ -76,15 +76,14 @@ Có 2 loại cáp `chính` là “sạc nhanh” và “sạc thường”, và 
 - Phụ kiện: C100.
 ```
 
-Tính đến thời điểm hiện tại, cáp sạc thường gần không thể nhận biết được thật hay giả bằng mắt và cả bằng phần mềm, do cơ chế bảo mật của cáp sạc thường đã bị bẻ khóa bởi “pháp sư trung hoa” từ tận… 2012, thời điểm ra mắt của cáp lightning.
-Chính vì sự dể bẻ khóa của cáp thường, khi ra mắt thế hệ lightning sạc nhanh (2017), Apple đã cung cáp cơ chế mã hóa với thuật toán SHA265, điều này khiến cho việc bẻ khóa cáp sạc nhanh khó như bẻ khóa tiền mã hóa Bitcoin.
-Cho nên, trong bài viết này, tôi chỉ tập trung vào mục “kiểm tra cáp sạc nhanh lightning là thật hay giả” thay vì cáp sạc thường.
--
-Với cáp thật thì chúng ta lại có 3 loại chính:
-- Mfi: MFi là viết tắt của cụm từ “Made for iPhone/iPad/iPod”, đây là chứng chỉ được Apple đưa ra nhằm siết chặt việc quản lý phụ kiện dành cho iPhone/iPad/iPod được sản xuất bởi các hãng thứ 3. Chứng chỉ MFi là một trong những đảm bảo giúp người dùng tránh những rủi ro khi mua những phụ kiện có sử dụng điện cho thiết bị của Apple.
-- Original: Là những phụ kiện được Apple ủy quyền cho các nhà máy [OEM](#) như Foxconn để sản xuất các phụ kiện chất lượng cao.
-- Hacked:  
-
+Tính đến thời điểm hiện tại, cáp sạc thường gần không thể nhận biết được thật hay giả bằng mắt và cả bằng phần mềm, do cơ chế bảo mật của cáp sạc thường đã bị bẻ khóa bởi `“pháp sư trung hoa”` từ tận… 2012, thời điểm ra mắt của cáp lightning.
+Chính vì sự dể bẻ khóa của cáp thường, khi ra mắt thế hệ lightning sạc nhanh (2017), Apple đã cung cáp cơ chế mã hóa với thuật toán `SHA265`, điều này khiến cho việc bẻ khóa cáp sạc nhanh khó như bẻ khóa tiền mã hóa [Bitcoin](#).
+Cho nên, trong bài viết này, chúng ra chỉ tập trung vào mục `“kiểm tra cáp sạc nhanh lightning là thật hay giả”`.
+Với cáp thật thì chúng ta lại có 4 loại chính:
+- Mfi: viết tắt của cụm từ `“Made for iPhone/iPad/iPod”`, đây là `chứng chỉ` được Apple đưa ra nhằm siết chặt việc quản lý phụ kiện dành cho `iPhone/iPad/iPod` được sản xuất bởi các `hãng thứ 3`. Chứng chỉ MFi là một trong những đảm bảo giúp người dùng tránh những rủi ro khi mua những phụ kiện có sử dụng điện cho thiết bị của Apple.
+- Original: Gồm những phụ kiện được Apple ủy quyền cho các nhà máy [OEM](#) như Foxconn để sản xuất các phụ kiện chất lượng cao.
+- Hacked: Gồm những phụ kiện không được sự cho phép lẫn công nhận của Apple, nhưng vẫn có vi xử lý giả để có thể sử dụng cho việc sạc hoặc truyền dữ liệu. Loại này hay còn được gọi là `Fake loại 1`.
+- Pha-Ke (fake): Bao gồm các loại cáp kém chất lượng, có thể sạc và truyền dữ liệu nhưng `hoàn toàn` có thể gây ra sự `mất mát dữ liệu` hoặc `cháy nổ` do thiếu mất sự có mặt của những `bộ vi xử lý quan trọng`. Loại này nên tránh xa trước khi màn hình của bạn bị [liệt cảm ứng](#) hoặc [gây ra các vấn đề về pin](#). Tệ nhất là hỏng luôn cả điện thoại như anh bạn `Hiếu` mà tôi quen.
 
 The ABC-Models is a three parameter model (a, b, c, hence the name), that only receives rain as input and only has one storage. A fraction of the rain is immediately lost, due to evapotranspiration (parameter b), another fraction percolates through the soil to the groundwater storage (parameter a), and the last parameter c stands for the amount of groundwater, that leaves the storage into the stream. The code in Python, with the use of Numpy arrays might look like this:
 
