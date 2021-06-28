@@ -4,7 +4,7 @@ title: Giải thích cổng sạc Apple Lightning
 date: '2021-06-29 5:00'
 image: /images/apple_lightning/lightning.jpg
 excerpt: >-
-  Giới thiệu về lịch sử ra đời của cổng sạc Lightning. Đồng thời chỉ cách nhận biết cáp sạc thật và giả, các loại cáp đời mới và cũ.
+  Giới thiệu về lịch sử ra đời của cổng sạc Lightning. Đồng thời chỉ cách nhận biết cáp sạc thật và giả, các loại cáp đời mới và cũ bằng phần mềm 3utools trên máy tính, hoặc là trực tiếp trên điện thoại với các thiết bị đã jailbreak.
 comments: true
 ---
 
@@ -54,14 +54,14 @@ Tai nghe BeatsX.
 Loa Beats Pill+.
 iPhone Lightning Dock.
 - Các bộ chuyển đổi:
-Bộ chuyển Lightning sang [30-pin](#), [Micro USB](#).
-Bộ chuyển Lightning sang [USB Camera](#), [USB 3 Camera](#).
-Bộ chuyển Lightning sang [VGA](#), [Digital AV](#), [jack tai nghe 3.5 mm](#).
+Bộ chuyển Lightning sang 30-pin, Micro USB.
+Bộ chuyển Lightning sang USB Camera, USB 3 Camera.
+Bộ chuyển Lightning sang VGA, Digital AV, jack tai nghe 3.5 mm.
 ```
 
-and this was for long the only way. But with the newest release, which is just a day old you should also be able to install Numba using `pip`. But as long as you are able to use `conda`, I'll recommend using it, since it will be able to install e.g. the CUDA toolkit for you, in case you want to make you Python code GPU-ready (yes, this is also possible!).
+và một số thiết bị sạc dự phòng của hãng thứ 3 đạt tiêu chuẩn [MFI](#).
 
-## How can I use it?
+## Tại sao không nên dùng cáp Lightning giả?
 
 It doesn't require much. Basically you write your "normal" Python function, and then add a decorator to the function definition (If you aren't so familiar with decorators read [this](https://www.thecodeship.com/patterns/guide-to-python-function-decorators/) or [that](https://realpython.com/blog/python/primer-on-python-decorators/) for an introduction). There exist different kind of decorators you can use, but the `@jit` might be the one of choice for the beginning. The other decorators can be used to e.g. create numpy universal functions `@vectorize` or write code that will be executed on a CUDA GPU `@cuda`. I won't cover these decorators in this article, but maybe in another. For now, let's just have a look on the basic steps.
 The code example they provide is a summation function of a 2d-array (you probably would never calculate this way) but here is the code:
