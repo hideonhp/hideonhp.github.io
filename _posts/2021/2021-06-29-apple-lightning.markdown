@@ -83,7 +83,7 @@ Với cáp thật thì chúng ta lại có 4 loại chính:
 - Mfi: viết tắt của cụm từ `“Made for iPhone/iPad/iPod”`, đây là `chứng chỉ` được Apple đưa ra nhằm siết chặt việc quản lý phụ kiện dành cho `iPhone/iPad/iPod` được sản xuất bởi các `hãng thứ 3`. Chứng chỉ MFi là một trong những đảm bảo giúp người dùng tránh những rủi ro khi mua những phụ kiện có sử dụng điện cho thiết bị của Apple.
 - Original: Gồm những phụ kiện được Apple chính thức `ủy quyền` cho các nhà máy [OEM](#) như Foxconn để sản xuất các phụ kiện chất lượng cao.
 - Hacked: Gồm những phụ kiện không được sự cho phép lẫn công nhận của Apple, nhưng vẫn có vi xử lý giả để có thể sử dụng cho việc sạc hoặc truyền dữ liệu. Loại này hay còn được gọi là `Fake loại 1`.
-- Pha-Ke (fake): Bao gồm các loại cáp kém chất lượng, có thể sạc và truyền dữ liệu nhưng `hoàn toàn` có thể gây ra sự `mất mát dữ liệu` hoặc `cháy nổ` do thiếu mất sự có mặt của những `bộ vi xử lý quan trọng`. Loại này nên tránh xa trước khi màn hình của bạn bị [liệt cảm ứng](#) hoặc [gây ra các vấn đề về pin](#). Tệ nhất là hỏng luôn cả điện thoại như anh bạn `Hiếu` mà tôi quen.
+- Pha-Ke (fake): Bao gồm các loại cáp kém chất lượng, có thể sạc và truyền dữ liệu nhưng `hoàn toàn` có thể gây ra sự `mất mát dữ liệu` hoặc `cháy nổ` do thiếu mất sự có mặt của những `bộ vi xử lý quan trọng`. Loại này nên tránh xa trước khi màn hình của bạn bị [liệt cảm ứng](#) hoặc [gây ra các vấn đề về pin](#). Tệ nhất là hỏng luôn cả điện thoại như `thằng bạn tôi`.
 
 ## Cách nhận biết loại cáp bằng phần mềm 3utools
 
