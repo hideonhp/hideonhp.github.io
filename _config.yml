@@ -26,10 +26,13 @@ navbar-links:
   Thông Tin: "aboutme"
   Android: "Android"
   Windows: "Windows"
+  Windows Phone: "WindowsPhone"
+  BlackBerryOS: "BlackBerryOS"
   IOS: "IOS"
   Symbian: "Symbian"
   Macos: "Macos"
   Linux: "Linux"
+  
   
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
