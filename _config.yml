@@ -24,14 +24,10 @@ description: Đỉnk Kao !
 # List of links in the navigation bar
 navbar-links:
   Thông Tin: "aboutme"
-  Android: "Android"
-  Windows: "Windows"
-  Windows Phone: "WindowsPhone"
-  BlackBerryOS: "BlackBerryOS"
-  IOS: "IOS"
-  Symbian: "Symbian"
-  Macos: "Macos"
-  Linux: "Linux"
+  Phần Cứng: "hardware-tag"
+  Phần Mềm: "software-tag"
+  Hệ Điều Hành: "os-tag"
+
   
   
 #  Resources:
