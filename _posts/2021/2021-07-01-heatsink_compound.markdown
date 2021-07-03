@@ -7,3 +7,4 @@ excerpt: >-
   Giới thiệu về kem tản nhiệt dạng lỏng và cứng, hay còn gọi là Thermal Paste (Coumpound Heatsink). Sau đó giải thích về sự quan trọng và các mức độ cần thiết của việc thay kem thường xuyên. Đồng thời chỉ ra sự khác biệt giữa các loại kem. 
 comments: true
 ---
+Erorr T-03: "Cannot fetch data" -b112--stack
