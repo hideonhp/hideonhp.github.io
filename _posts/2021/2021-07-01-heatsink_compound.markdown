@@ -35,15 +35,15 @@ Kem tản nhiệt là một dạng hợp chất được cấu thành từ các 
 </div>
 
 `Dạng lỏng`: thường được sử dụng trong trường hợp truyền lượng lớn nhiệt độ (Gpu, Cpu), dạng lỏng có 3 thành phần phổ biến bao gồm:
-``` bash
-Kim loại lỏng: Đây là loại keo tản nhiệt có hiệu năng tốt nhất bởi khả năng dẫn nhiệt rất cao của kim loại. Tuy nhiên kim loại ngoài dẫn nhiệt ra, chúng còn dẫn cả điện rất tốt nên khi sử dụng nếu để keo dính vào phần mạch có thể gây chập rất nguy hiểm cho linh kiện.
+
+- Kim loại lỏng: Đây là loại keo tản nhiệt có hiệu năng tốt nhất bởi khả năng dẫn nhiệt rất cao của kim loại. Tuy nhiên kim loại ngoài dẫn nhiệt ra, chúng còn dẫn cả điện rất tốt nên khi sử dụng nếu để keo dính vào phần mạch có thể gây chập rất nguy hiểm cho linh kiện.
 -> Không nên sử dụng cho laptop hoặc pc (máy tính cá nhân) có bo mạch nhỏ (mini-atx, micro-atx).
 
-Gốm lỏng: Loại keo tản nhiệt này có hiệu quả kém hơn một chút so với keo kim loại, bù lại loại keo này có ưu điểm là không dẫn điện nên rất an toàn.
+- Gốm lỏng: Loại keo tản nhiệt này có hiệu quả kém hơn một chút so với keo kim loại, bù lại loại keo này có ưu điểm là không dẫn điện nên rất an toàn.
 -> Nên sử dụng cho laptop và pc.
 
-Silicon lỏng: loại keo thường được bán kèm cùng với tản nhiệt mặc định của CPU và trong các bộ tản nhiệt chất lượng thấp. Hiệu quả của loại keo này kém hơn nhiều so với 2 loại trên.
-```
+- Silicon lỏng: loại keo thường được bán kèm cùng với tản nhiệt mặc định của CPU và trong các bộ tản nhiệt chất lượng thấp. Hiệu quả của loại keo này kém hơn nhiều so với 2 loại trên.
+
 <div class="fig figcenter fighighlight">
   <img src="/images/heatsink_compound/pad.jpg">
   <div class="figcaption"><br>Miếng tản nhiệt dạng rắn màu xanh nước biển trên các Phase điện và Gpu Ram.
